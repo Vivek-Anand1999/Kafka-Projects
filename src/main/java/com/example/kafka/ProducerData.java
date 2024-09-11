@@ -61,7 +61,7 @@ public class ProducerData {
 
     public static void main(String[] args) {
         ProducerData producerData = new ProducerData();
-        log.info("Sending data to Kafka ...");
+        log.info("Sending data to Kafka ....");
         List<String> list = Arrays.asList("Apple", "Banana", "Orange", "Mango", "Grapes", "Pineapple", "Strawberry", "Blueberry", "Watermelon", "Peach", "Pear", "Cherry", "Kiwi", "Papaya", "Lemon", "Lime", "Pomegranate", "Avocado", "Coconut", "Plum");
         for (int i = 0; i < list.size(); i++) {
             producerData.sendMessage("fruits", "key1", list.get(i));
